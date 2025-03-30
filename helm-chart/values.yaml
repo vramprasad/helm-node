@@ -1,0 +1,10 @@
+replicaCount: 1
+image:
+  repository: nodejs-api
+  tag: v1
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 3000
+env:
+  NODE_ENV: development
